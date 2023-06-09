@@ -1,147 +1,153 @@
-@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@279&family=Montserrat&display=swap');
-
-* {
+body {
+    background: linear-gradient(to top right, #000000, #D4AF37, #FF0000);
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-body {
-    font-family: 'Gemunu Libre', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    color: #d6d4d4;
-    background-color: rgb(7, 54, 54);   
+#navbar {
+    background-color: #222222;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+  
+  .signup-link {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .signup-link:hover {
+    color: #FF0000;
+  }
+
+#navbar h1 {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin: 0;
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to bottom right, rgb(255, 255, 0), rgb(255, 238, 0));
-    height: 600px;
-    width: 600px;
-    margin-left: 180px;
-    margin-top: 70px;
-    border-radius: 50%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #FFFFFF;
 }
 
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    height: 70px;
-    width: 70px;
-    margin-left: 150px;
-    margin-bottom: 120px;
-    border-radius: 50%;
+.container h2 {
+    font-size: 28px;
 }
 
-.mouth {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    height: 70px;
-    width: 70px;
-    margin-right: 180px;
-    margin-top: 120px;
-    border-radius: 5%;
+.container p {
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-.inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    height: 70px;
-    width: 70px;
-    margin-right: 300px;
-    border-radius: 50%;
+.section {
+    margin-top: 40px;
 }
 
-/* .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to bottom right, rgb(200, 0, 255), rgb(0, 119, 255));
-    height: 500px;
-    width: 500px;
-    margin-left: 200px;
-    margin-top: 100px;
-    border-radius: 50% 50% 10% 10%;
-    border: 2px solid blue;
-}
-
-.outer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to bottom right, rgb(200, 0, 255), rgb(0, 119, 255));
-    height: 400px;
-    width: 400px;
-    margin-left: 100px;
-    margin-top: 75px;
-    border-radius: 50% 50% 10% 10%;
-    border: 2px solid blue;
-}
-
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(96, 186, 112);
-    background-image: linear-gradient(to bottom right, rgb(200, 0, 255), rgb(0, 119, 255));
-    height: 300px;
-    width: 300px;
-    margin-left: 100px;
-    margin-top: 50px;
-    border-radius: 50% 50% 10% 10%;
-    border: 2px solid blue;
-}
-
-.col {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to bottom right, rgb(200, 0, 255), rgb(0, 119, 255));
-    height: 200px;
-    width: 200px;
-    margin-left: 70px;
-    margin-top: 25px;
-    border-radius: 50% 50% 10% 10%;
-    border: 2px solid blue;
-}
-
-
-.inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to bottom right, rgb(200, 0, 255), rgb(0, 119, 255));
-    height: 100px;
-    width: 100px;
-    margin-left: 50px;
-    margin-top: 12px;
-    border-radius: 50% 50% 10% 10%;
-    border: 2px solid blue;
-}
-
-p {
+.card {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #222222;
+    border-radius: 8px;
+    padding: 20px;
     text-align: center;
-    font-size: 9px;
-    color: aqua;
-} */
+}
 
-#title {
-    color: white;
-    justify-content: center;
-    align-items: center;
-    padding: 35px;
-    margin-top: 25px;
-    margin-left: 60px;
-    font-size: 70px;
-    background-image: linear-gradient(to right, red, black);
-    border-radius: 25%;
-    width: 900px;
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card p {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.fade-in {
+    animation: fade-in 500ms ease-in-out;
+    opacity: 1;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#footer {
+    background-color: #222222;
+    padding: 5px;
+    color: #FFFFFF;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+}
+
+.footer-links a {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.footer-links a:hover {
+    color: #FF0000;
+}
+
+.footer-links a:last-child {
+    margin-right: 0;
+}
+
+.footer-links i {
+    vertical-align: middle;
 }
